@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf8 -*-
 
+from builtins import object
 import os
 from collections import defaultdict
 

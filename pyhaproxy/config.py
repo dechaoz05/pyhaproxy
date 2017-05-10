@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
+from builtins import object
 class Configuration(object):
     """Represents a whole haproxy config file
 

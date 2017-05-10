@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from __future__ import print_function
+from builtins import str
+from builtins import object
 from collections import defaultdict
 import re
 
@@ -3116,4 +3119,4 @@ if __name__ == '__main__':
         filestring = f.read()
         tree = parse(filestring)
         for ele in tree.elements:
-            print ele.offset, ele.text
+            print(ele.offset, ele.text)

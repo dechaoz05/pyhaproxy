@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 
 
+from __future__ import print_function
+from builtins import object
 class Render(object):
     """Do rendering the config.Config object to a str
 
@@ -35,7 +37,7 @@ class Render(object):
     def dumps_to(self, filepath):
         with open(filepath, 'w') as f:
             f.write(self.render_configuration())
-        print 'write configs into %s succeed' % filepath
+        print('write configs into %s succeed' % filepath)
 
     def render_global(self, globall):
         globall_str = '''
@@ -115,7 +117,7 @@ backend %s
             str: config block str
         """
         config_block_str = ''
-        for config_type, line_list in config_block.iteritems():
+        for config_type, line_list in config_block.items():
             for line in line_list:
                 if config_type == 'options':
                     line_str = self.__render_option(line)
